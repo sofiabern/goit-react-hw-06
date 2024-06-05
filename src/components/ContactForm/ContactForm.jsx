@@ -30,10 +30,7 @@ function ContactForm() {
   const fieldId = useId();
 
   const handleSubmit = (values, actions) => {
-    const { name, number } = values;
-    const contact = { name, number };
-    console.log(contact)
-    dispatch(addContact(contact));
+    dispatch(addContact({...values}));
     actions.resetForm();
   };
 

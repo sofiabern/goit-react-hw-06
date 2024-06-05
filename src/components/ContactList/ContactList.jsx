@@ -8,7 +8,7 @@ import { selectContacts } from "../../redux/contactsSlice";
 
 function ContactList() {
   const contacts = useSelector(selectContacts);
-  console.log(contacts);
+
 
   return (
     <ul className={css["contact-list"]}>
